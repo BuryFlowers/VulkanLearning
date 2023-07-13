@@ -11,5 +11,6 @@ void main()
 {
 
     outColor = texture(texSampler, fragTexCoord);
+    outColor = vec4(pow(outColor.xyz, vec3(1.0 / 2.2)), 1.0);
 
 }
